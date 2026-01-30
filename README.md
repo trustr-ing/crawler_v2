@@ -68,13 +68,13 @@ INIT_PUBKEYS=3bf0c63fcb93463407af97a5e5ee64fa883d107ef9e558472c4eb9aaaefa459d
 FIREHOSE_OFFSET=60s
 
 # The event kinds the Firehose queries for.
-FIREHOSE_KINDS=0,3,10000,10002,10063
+FIREHOSE_KINDS=0,3,1984,10000,10002
 
 # Fetcher
 # Fetcher is responsible for fetching old events of pubkeys promoted by the Arbiter.
 
 # The event kinds the Fetcher queries for.
-FETCHER_KINDS=0,3,10000,10002,10063
+FETCHER_KINDS=0,3,1984,10000,10002
 
 # Max number of pubkeys per batch when querying for Nostr events.
 # Higher values increase data throughput but may result in rate-limiting by relays.
